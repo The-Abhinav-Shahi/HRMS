@@ -4,8 +4,6 @@
     width: 100%;
     border: 10px;
     left: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     display: grid;
     grid-template-columns: 5% 85% 10%;
@@ -72,7 +70,6 @@
     background-color: rgba(128, 122, 122, 0.3);
     transition-duration: 0.3s;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-
 }
 
 .bell-icon {
@@ -155,3 +152,89 @@
     visibility: visible;
     opacity: 1;
 }
+
+.sidenav {
+    border-style: solid;
+    position: fixed;
+    top: 50px;
+    height: 100%;
+    width: 22%;
+    left: 0px;
+}
+
+.sidebar-btn {
+    margin: 0;
+    border-style: none;
+    background-color: transparent;
+    height: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    padding-top: 10px;
+}
+
+.home-icon {
+    position: relative;
+    margin-top: -5px;
+    height: 30px;
+    width: auto;
+    padding-left: 10px;
+}
+
+.sidenav-text {
+    padding-left: 10px;
+    text-align: left;
+    margin-top: 0px;
+    font-size: 19px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.sidebar-div :hover {
+    cursor: pointer;
+    background-color: rgba(128, 122, 122, 0.3);
+    transition-duration: 0.3s;
+}
+
+.sidebar-btn :hover {
+    cursor: pointer;
+    background-color: rgba(128, 122, 122, 0);
+    transition-duration: 0.3s;
+}
+
+.employee-icon {
+    position: relative;
+    margin-top: -5px;
+    height: 30px;
+    width: auto;
+    padding-left: 10px;
+}
+
+.fa-caret-down {
+    margin-top: 3px;
+    font-size: 20px;
+}
+
+.sub-options {
+    width: 76%;
+    float: right;
+    background-color: white;
+    border-style: none;
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+    height: 50px;
+    text-align: left;
+}
+
+.employee-info-dropdown :hover {
+    cursor: pointer;
+    background-color: rgba(128, 122, 122, 0.3);
+    transition-duration: 0.3s;
+}
+
+.active {
+    background-color: gray;
+}
+
+.employee-info-dropdown {
+}
+

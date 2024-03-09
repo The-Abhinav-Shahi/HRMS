@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IF=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HRMS</title>
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles.css">
         <script defer  src="app.js"></script>
     </head>
@@ -13,8 +13,8 @@
         <main>
             <div class="navbar">
                 <div class="hamburger">
-                    <button class="hamburger-btn" onclick="menubar()">
-                        <img class="hamburger-img" src="hrms-hamburgwr.png">
+                    <button id="menubar" class="hamburger-btn" onclick="menubar()">
+                        <img class="hamburger-img" src="icons/hrms-hamburgwr.png">
                     </button>
                 </div>
                 <div class="title-tag">
@@ -25,19 +25,37 @@
                 <div class="right-info">
                     <div class="notify">
                         <button class="bell-icon-btn" onclick="notifications()">
-                            <img class="bell-icon" src="bell.png">
+                            <img class="bell-icon" src="icons/bell.png">
                             <span class="tooltip-notify">Notifications</span>
                         </button>
                     </div>
                     <div class="account-circle">
                         <button class="acc-btn" onclick="myAccount()">
-                            <img class="acc-icon" src="acc-cirlce.png">
+                            <img class="acc-icon" src="icons/acc-cirlce.png">
                             <span class="tooltip-account">My Account</span>
                         </button>
                     </div>
                 </div>
             </div>
-
+            <div class="sidenav" id="mySidenav">
+                <div class="sidebar-div">
+                    <button class="sidebar-btn" onclick="homePage()">
+                        <img class="home-icon" src="icons/home-icon.png"><p class="sidenav-text">Home</p> </p>
+                    </button>
+                </div>
+                <div class="sidebar-div" >
+                    <button id="employee-btn" class="sidebar-btn" onclick="employeePage()">
+                        <img class="employee-icon" src="icons/attendance-icon.png"><p class="sidenav-text">Employees</p> <i class="fa fa-caret-down"></i>
+                    </button>
+                </div>
+                <div class="employee-info-dropdown">
+                    <button class="sub-options" onclick="overViewPage()">Overview</button>
+                    <button class="sub-options" onclick="Placements()">Placements</button>
+                    <button class="sub-options" onclick="EmploymentTerms()">Employment Terms</button>
+                    <button class="sub-options" onclick="WorkData()">Personnel Info</button>
+                    <button class="sub-options" onclick="Role()">Role Figures</button>
+                </div>
+            </div>
         </main>
     </body>
 </html>
